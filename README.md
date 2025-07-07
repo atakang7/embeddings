@@ -1,4 +1,3 @@
-```
 # Embeddings Server
 
 A minimal, high-throughput FastAPI service exposing a single `/embed` endpoint that returns normalized 32-bit float embeddings using a Sentence-Transformers model.
@@ -77,4 +76,4 @@ curl -X POST http://localhost:8000/embed \
 - Run behind a reverse proxy (e.g., Envoy or NGINX).
 - Consider containerizing for orchestration (Docker/K8s).
 - Use health checks to monitor model load success.
-```
+
