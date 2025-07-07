@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "embeddings"
+version = "0.1.0"
+description = "Blazing-fast FastAPI text-embedding service"
+authors = ["atakang7 <atakan.gul000@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+# --- runtime deps ---
+fastapi = "^0.111.0"                     # API framework
+uvicorn = { extras = ["standard"], version = "^0.29.0" }  # ASGI server w/ gunicorn & watchdog
+sentence-transformers = "^2.7.0"         # Embedding models
+torch = "^2.2.2"                         # Back-end for the model
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2"
+black = "^24.4"
+isort = "^5.13"
+ruff = "^0.4"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
